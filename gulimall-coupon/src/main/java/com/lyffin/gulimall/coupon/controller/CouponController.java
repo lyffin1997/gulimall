@@ -4,11 +4,9 @@ import java.util.Arrays;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.*;
 
 import com.lyffin.gulimall.coupon.entity.CouponEntity;
 import com.lyffin.gulimall.coupon.service.CouponService;
@@ -25,10 +23,27 @@ import com.lyffin.common.utils.R;
  * @date 2022-12-27 19:50:54
  */
 @RestController
+@RefreshScope
 @RequestMapping("coupon/coupon")
 public class CouponController {
     @Autowired
     private CouponService couponService;
+
+    @Value("${coupon.user.name}")
+    private String name;
+
+    @Value("${coupon.user.age}")
+    private Integer age;
+
+    @Value("${info}")
+    private String info;
+
+    //配置中心有值优先配置中心，没有就从本地配置文件读
+    @GetMapping(value = "/test")
+    public String memberTest() {
+        System.out.println(name + age +info);
+        return "1";
+    }
 
     /**
      * 列表

@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: gulimall-coupon
+  cloud:
+    nacos:
+      config:
+        #默认读取，拼接方式：微服务名+profiles环境+file-extension，例如gulimall-coupon-dev.yml为默认读取的文件名
+        server-addr: 192.168.1.71:8848
+        file-extension: yml
+        group: DEV_GROUP
+        namespace: c76fa5b7-cd85-4b51-ba80-c3bd4a0b73d0
+        #读取多个配置文件
+        extension-configs:
+          - dataId: datasource.yml
+            group: DEV_GROUP
+            refresh: true
+            namespace: c76fa5b7-cd85-4b51-ba80-c3bd4a0b73d0
