@@ -6,9 +6,9 @@
  * 版权所有，侵权必究！
  */
 
-package com.lyffin.common.xss;
+package com.lyffin.gulimall.common.xss;
 
-import com.lyffin.common.utils.RRException;
+import com.lyffin.gulimall.common.utils.RRException;
 import org.apache.commons.lang.StringUtils;
 
 /**

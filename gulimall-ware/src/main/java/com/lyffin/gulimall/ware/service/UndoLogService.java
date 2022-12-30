@@ -1,7 +1,7 @@
 package com.lyffin.gulimall.ware.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.lyffin.common.utils.PageUtils;
+import com.lyffin.gulimall.common.utils.PageUtils;
 import com.lyffin.gulimall.ware.entity.UndoLogEntity;
 
 import java.util.Map;

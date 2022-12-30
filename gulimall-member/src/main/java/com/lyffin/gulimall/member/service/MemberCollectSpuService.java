@@ -1,7 +1,7 @@
 package com.lyffin.gulimall.member.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.lyffin.common.utils.PageUtils;
+import com.lyffin.gulimall.common.utils.PageUtils;
 import com.lyffin.gulimall.member.entity.MemberCollectSpuEntity;
 
 import java.util.Map;

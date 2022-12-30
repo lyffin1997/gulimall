@@ -12,4 +12,5 @@ alicloud:
   access-key: LTAI5tP1o4SnzCWg6XEvZH7f
   secret-key: eOu9zdgmsT7S8QqiqhZzySFl4rucW4
   endpoint: oss-cn-shenzhen.aliyuncs.com
+  bucket: my-codedemo
 

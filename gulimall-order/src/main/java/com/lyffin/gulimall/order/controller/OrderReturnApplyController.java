@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.lyffin.gulimall.order.entity.OrderReturnApplyEntity;
 import com.lyffin.gulimall.order.service.OrderReturnApplyService;
-import com.lyffin.common.utils.PageUtils;
-import com.lyffin.common.utils.R;
+import com.lyffin.gulimall.common.utils.PageUtils;
+import com.lyffin.gulimall.common.utils.R;
 
 
 

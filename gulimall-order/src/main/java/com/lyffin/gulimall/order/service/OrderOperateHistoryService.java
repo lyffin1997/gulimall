@@ -1,7 +1,7 @@
 package com.lyffin.gulimall.order.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.lyffin.common.utils.PageUtils;
+import com.lyffin.gulimall.common.utils.PageUtils;
 import com.lyffin.gulimall.order.entity.OrderOperateHistoryEntity;
 
 import java.util.Map;

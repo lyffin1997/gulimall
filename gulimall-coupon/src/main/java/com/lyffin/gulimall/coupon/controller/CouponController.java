@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.*;
 
 import com.lyffin.gulimall.coupon.entity.CouponEntity;
 import com.lyffin.gulimall.coupon.service.CouponService;
-import com.lyffin.common.utils.PageUtils;
-import com.lyffin.common.utils.R;
+import com.lyffin.gulimall.common.utils.PageUtils;
+import com.lyffin.gulimall.common.utils.R;
 
 
 

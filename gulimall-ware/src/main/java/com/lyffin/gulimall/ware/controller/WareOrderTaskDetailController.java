@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.lyffin.gulimall.ware.entity.WareOrderTaskDetailEntity;
 import com.lyffin.gulimall.ware.service.WareOrderTaskDetailService;
-import com.lyffin.common.utils.PageUtils;
-import com.lyffin.common.utils.R;
+import com.lyffin.gulimall.common.utils.PageUtils;
+import com.lyffin.gulimall.common.utils.R;
 
 
 

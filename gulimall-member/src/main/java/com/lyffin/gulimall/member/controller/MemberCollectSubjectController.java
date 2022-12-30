@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.lyffin.gulimall.member.entity.MemberCollectSubjectEntity;
 import com.lyffin.gulimall.member.service.MemberCollectSubjectService;
-import com.lyffin.common.utils.PageUtils;
-import com.lyffin.common.utils.R;
+import com.lyffin.gulimall.common.utils.PageUtils;
+import com.lyffin.gulimall.common.utils.R;
 
 
 

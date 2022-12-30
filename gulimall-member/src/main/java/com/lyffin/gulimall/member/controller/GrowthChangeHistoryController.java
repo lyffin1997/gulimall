@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.lyffin.gulimall.member.entity.GrowthChangeHistoryEntity;
 import com.lyffin.gulimall.member.service.GrowthChangeHistoryService;
-import com.lyffin.common.utils.PageUtils;
-import com.lyffin.common.utils.R;
+import com.lyffin.gulimall.common.utils.PageUtils;
+import com.lyffin.gulimall.common.utils.R;
 
 
 

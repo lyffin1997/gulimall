@@ -5,8 +5,8 @@ import java.util.Map;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.lyffin.common.utils.PageUtils;
-import com.lyffin.common.utils.Query;
+import com.lyffin.gulimall.common.utils.PageUtils;
+import com.lyffin.gulimall.common.utils.Query;
 
 import com.lyffin.gulimall.member.dao.MemberDao;
 import com.lyffin.gulimall.member.entity.MemberEntity;

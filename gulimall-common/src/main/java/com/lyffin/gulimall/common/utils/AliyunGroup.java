@@ -6,7 +6,7 @@
  * 版权所有，侵权必究！
  */
 
-package com.lyffin.common.utils;
+package com.lyffin.gulimall.common.utils;
 
 /**
  * 阿里云

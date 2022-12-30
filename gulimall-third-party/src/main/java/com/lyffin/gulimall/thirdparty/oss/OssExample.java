@@ -12,7 +12,7 @@ import java.io.InputStream;
 
 @Component
 @Slf4j
-public class OssClient {
+public class OssExample {
 
     @Autowired
     private OssProperties ossProperties;

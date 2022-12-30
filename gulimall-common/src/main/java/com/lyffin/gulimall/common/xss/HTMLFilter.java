@@ -1,4 +1,4 @@
-package com.lyffin.common.xss;
+package com.lyffin.gulimall.common.xss;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;

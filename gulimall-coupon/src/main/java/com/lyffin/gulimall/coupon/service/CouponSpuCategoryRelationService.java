@@ -1,7 +1,7 @@
 package com.lyffin.gulimall.coupon.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.lyffin.common.utils.PageUtils;
+import com.lyffin.gulimall.common.utils.PageUtils;
 import com.lyffin.gulimall.coupon.entity.CouponSpuCategoryRelationEntity;
 
 import java.util.Map;

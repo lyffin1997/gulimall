@@ -6,12 +6,12 @@
  * 版权所有，侵权必究！
  */
 
-package com.lyffin.common.utils;
+package com.lyffin.gulimall.common.utils;
 
 /**
- * 七牛
+ * 腾讯云
  *
  * @author Mark sunlightcs@gmail.com
  */
-public interface QiniuGroup {
+public interface QcloudGroup {
 }

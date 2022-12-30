@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 
 import com.lyffin.gulimall.member.entity.MemberEntity;
 import com.lyffin.gulimall.member.service.MemberService;
-import com.lyffin.common.utils.PageUtils;
-import com.lyffin.common.utils.R;
+import com.lyffin.gulimall.common.utils.PageUtils;
+import com.lyffin.gulimall.common.utils.R;
 
 
 
