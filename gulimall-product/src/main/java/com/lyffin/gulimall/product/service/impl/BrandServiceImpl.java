@@ -16,6 +16,7 @@ import com.lyffin.gulimall.common.utils.Query;
 import com.lyffin.gulimall.product.dao.BrandDao;
 import com.lyffin.gulimall.product.entity.BrandEntity;
 import com.lyffin.gulimall.product.service.BrandService;
+import org.springframework.transaction.annotation.Transactional;
 
 
 /**
@@ -42,6 +43,7 @@ public class BrandServiceImpl extends ServiceImpl<BrandDao, BrandEntity> impleme
         return new PageUtils(page);
     }
 
+    @Transactional
     @Override
     public void updateDetail(BrandEntity brand) {
         this.updateById(brand);
