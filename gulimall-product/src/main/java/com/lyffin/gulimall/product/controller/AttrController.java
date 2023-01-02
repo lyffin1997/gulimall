@@ -1,8 +1,11 @@
 package com.lyffin.gulimall.product.controller;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
+import com.lyffin.gulimall.product.entity.ProductAttrValueEntity;
+import com.lyffin.gulimall.product.service.ProductAttrValueService;
 import com.lyffin.gulimall.product.vo.AttrRespVo;
 import com.lyffin.gulimall.product.vo.AttrVo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +30,15 @@ import com.lyffin.gulimall.common.utils.R;
 public class AttrController {
     @Autowired
     private AttrService attrService;
+
+    @Autowired
+    ProductAttrValueService productAttrValueService;
+
+    @GetMapping("/base/listforspu/{spuId}")
+    public R baseAttrlistforspu(@PathVariable("spuId") Long spuId) {
+        List<ProductAttrValueEntity> entities = productAttrValueService.baseAttrlistforspu(spuId);
+        return R.ok().put("data",entities);
+    }
 
     /**
      * 列表
@@ -79,6 +91,13 @@ public class AttrController {
     public R update(@RequestBody AttrVo attr){
         attrService.updateAttr(attr);
 
+        return R.ok();
+    }
+
+    @PostMapping("/update/{spuId}")
+    // @RequiresPermissions("product:attr:update")
+    public R update(@PathVariable("spuId") Long spuId,@RequestBody List<ProductAttrValueEntity> entities){
+        productAttrValueService.updateSpuAttr(spuId, entities);
         return R.ok();
     }
 

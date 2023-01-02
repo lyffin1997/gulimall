@@ -10,6 +10,9 @@ spring:
     nacos:
       discovery:
         server-addr: 192.168.1.71:8848
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
 
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
@@ -20,3 +23,5 @@ mybatis-plus:
       #逻辑删除
       logic-delete-value: 1   #1代表已删除
       logic-not-delete-value: 0   #0代表未删除
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

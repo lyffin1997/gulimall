@@ -2,8 +2,10 @@ package com.lyffin.gulimall.product.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.lyffin.gulimall.common.utils.PageUtils;
+import com.lyffin.gulimall.product.entity.BrandEntity;
 import com.lyffin.gulimall.product.entity.CategoryBrandRelationEntity;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -22,5 +24,7 @@ public interface CategoryBrandRelationService extends IService<CategoryBrandRela
     void saveDetail(CategoryBrandRelationEntity categoryBrandRelation);
 
     void updateCategory(Long catId, String name);
+
+    List<BrandEntity> getBrandsByCatId(Long catId);
 }
 
