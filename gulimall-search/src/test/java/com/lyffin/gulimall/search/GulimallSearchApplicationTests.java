@@ -1,19 +1,17 @@
 package com.lyffin.gulimall.search;
 
 import com.alibaba.fastjson.JSON;
-import com.lyffin.gulimall.search.config.ElasticSearchConfig;
+import com.lyffin.gulimall.search.config.GulimallElasticSearchConfig;
 import lombok.Data;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.RestHighLevelClient;
-import org.elasticsearch.cluster.routing.allocation.allocator.BalancedShardsAllocator;
 import org.elasticsearch.common.xcontent.XContentType;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
-import org.elasticsearch.search.aggregations.Aggregation;
 import org.elasticsearch.search.aggregations.AggregationBuilders;
 import org.elasticsearch.search.aggregations.Aggregations;
 import org.elasticsearch.search.aggregations.bucket.terms.Terms;
@@ -26,7 +24,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.IOException;
-import java.util.Map;
 
 @SpringBootTest
 class GulimallSearchApplicationTests {
@@ -71,7 +68,7 @@ class GulimallSearchApplicationTests {
 
         searchRequest.source(searchSourceBuilder);
         //执行检索
-        SearchResponse searchResponse = client.search(searchRequest, ElasticSearchConfig.COMMON_OPTIONS);
+        SearchResponse searchResponse = client.search(searchRequest, GulimallElasticSearchConfig.COMMON_OPTIONS);
 
         //分析结果
         System.out.println(searchResponse.toString());
@@ -115,7 +112,7 @@ class GulimallSearchApplicationTests {
         String s = JSON.toJSONString(user);
         indexRequest.source(s, XContentType.JSON);
         //执行保存操作
-        IndexResponse index = client.index(indexRequest, ElasticSearchConfig.COMMON_OPTIONS);
+        IndexResponse index = client.index(indexRequest, GulimallElasticSearchConfig.COMMON_OPTIONS);
         //提取需要到响应数据
         System.out.println(index);
     }

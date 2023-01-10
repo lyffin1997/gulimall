@@ -13,7 +13,11 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
-
+  #开发期间暂时关闭缓存
+  thymeleaf:
+    cache: false
+  resources:
+    static-locations:
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
   #主键自增
